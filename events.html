@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Events | El Table</title>
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="static/css/transitions.css" media="all">
+	<link rel="stylesheet" type="text/css" href="static/css/events.css" media="all">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="el_favicon.png">
+
+	<!-- google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Signika:300,700' rel='stylesheet' type='text/css'>
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<!-- jquery -->
+ 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+	<!--js-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="static/js/jquery.collagePlus.js"></script>
+	<script src="static/js/jquery.collagePlus.min.js"></script>
+	<script src="static/js/jquery.collagePlus.min.js"></script>
+	<script src="static/js/jquery.removeWhitespace.min.js"></script>
+	<script src="static/js/jquery.collageCaption.js"></script>
+
+	<script type="text/javascript">
+
+    // All images need to be loaded for this plugin to work so
+    // we end up waiting for the whole window to load in this example
+    $(window).load(function () {
+    	$(document).ready(function(){
+    		collage();
+    		$('.Collage').collageCaption();
+    	});
+    });
+
+
+    // Here we apply the actual CollagePlus plugin
+    function collage() {
+    	$('.Collage').removeWhitespace().collagePlus(
+    	{
+    		'fadeSpeed'     : 2000,
+    		'targetHeight'  : 200
+    	}
+    	);
+    };
+
+    // This is just for the case that the browser window is resized
+    var resizeTimer = null;
+    $(window).bind('resize', function() {
+        // hide all the images until we resize them
+        $('.Collage .Image_Wrapper').css("opacity", 0);
+        // set a timer to re-apply the plugin
+        if (resizeTimer) clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(collage, 200);
+    });
+
+    </script>
+
+
+</head>
+
+<body>
+
+	<!-- NAVBAR -->
+	<div class="container-fluid" id="navbar">
+		<div class="row">
+			<div class="col-xs-6 col-md-4">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="navtext">
+							<a href='about.html'>about</a><br>
+							<a href='menu2014.pdf'>menu</a><br>
+							<a href='events.html'>events</a><br>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="navtext">
+							<a href='catering.html'>catering</a><br>
+							<a href='history.html'>history</a><br>
+							<a href='community.html'>community</a><br>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-md-4">
+				<!-- middle divs -->
+			</div>
+
+			<div class="col-xs-6 col-md-4">
+				<div id="navtitle">
+					<a href='index.html'>el table</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="mainbody">
+		our past events + specials<hr>
+	<section class="Collage effect-parent">
+		<div class="Image_Wrapper"><a><img alt="El Event" src="images/spam/apply1.jpg"></a></div>
+		<div class="Image_Wrapper" data-caption="Hurry up with my damn croissants! El Table serves croissants for $2."><a><img alt="El Event" src="images/spam/special4.jpg"></a></div>
+		<div class="Image_Wrapper" data-caption="Wellesley Review presents A Poetry Reading hosted in El Table"><a><img alt="El Event" src="images/spam/event5.jpg"></a></div>
+	</section>
+	<section class="Collage effect-parent">
+		<div class="Image_Wrapper" data-caption="Satan's Little Helper: pepperjack cheese, spicy brown mustard, bacon, and avocado on wheat"><a><img alt="El Event" src="images/spam/special2.jpg"></a></div>
+		<div class="Image_Wrapper" data-caption="El's So Fancy: greek yogurt and granola for $3.50"><a><img alt="El Event" src="images/spam/special3.jpg"></a></div>
+		<div class="Image_Wrapper" data-caption="The Love Snack: raspberry jam and melted brie toasted on a croissant"><a><img alt="El Event" src="images/spam/special5.jpg"></a></div>
+	</section>
+	<section class="Collage effect-parent">
+		<div class="Image_Wrapper" data-caption="Green Umbrella: discussing environmentalism and social justice at El Table"><a><img alt="El Event" src="images/spam/event3.jpeg"></a></div>
+		<div class="Image_Wrapper" data-caption="Clementine sale to support community organizations working for sustainability in Peru"><a><img alt="El Event" src="images/spam/event7.jpg"></a></div>
+		<div class="Image_Wrapper" data-caption="Muenster Mash: avocado, tomato, muenster toasted on whole wheat bread"><a><img alt="El Event" src="images/spam/special9.jpg"></a></div>
+	</section>
+	<section class="Collage effect-parent">
+		<div class="Image_Wrapper" ><a><img alt="El Event" src="images/spam/apply3.jpg"></a></div>
+		<div class="Image_Wrapper" data-caption="The Shakespeare Society's annual 24-hour Shakespeare event hosted at El Table"><a><img alt="El Event" src="images/spam/event1.jpg"></a></div>
+		<div class="Image_Wrapper"><a><img alt="El Event" src="images/spam/special8.png"></a></div>
+	</section>
+
+</div>
+
+<!-- COPYRIGHT -->
+
+<div id='copyright'>Copyright 2014 El Table. Designed by Lily Xie</div>
+
+
+</body>
+</html>

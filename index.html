@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!--
+		Supersized - Fullscreen Slideshow jQuery Plugin
+		Version : 3.2.7
+		Site	: www.buildinternet.com/project/supersized
+		
+		Author	: Sam Dunn
+		Company : One Mighty Roar (www.onemightyroar.com)
+		License : MIT License / GPL License
+	-->
+
+	<head>
+		<meta charset="UTF-8">
+		<title>El Table</title>
+
+		<!-- css -->
+		<link rel="stylesheet" type="text/css" href="static/css/homepage.css" >
+
+		<!-- javascript -->
+		<!-- <script src="static/css/homepage.js"></script> -->
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="el_favicon.png">
+
+		
+		<!-- google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Signika:300' rel='stylesheet' type='text/css' />
+		
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+		<!-- supersized code below -->
+		<link rel="stylesheet" href="supersized/css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="supersized/theme/supersized.shutter.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="supersized/js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="supersized/js/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="supersized/theme/supersized.shutter.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slideshow               :   1,			// Slideshow on/off
+					autoplay				:	1,			// Slideshow starts playing automatically
+					start_slide             :   1,			// Start slide (0 is random)
+					stop_loop				:	0,			// Pauses slideshow on last slide
+					random					: 	0,			// Randomize slide order (Ignores start slide)
+					slide_interval          :   3500,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	1000,		// Speed of transition
+					new_window				:	1,			// Image links open in new window/tab
+					pause_hover             :   0,			// Pause slideshow on hover
+					keyboard_nav            :   0,			// Keyboard navigation on/off
+					performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+					image_protect			:	1,			// Disables image dragging and right click with Javascript
+															   
+					// Size & Position						   
+					min_width		        :   0,			// Min width allowed (in pixels)
+					min_height		        :   0,			// Min height allowed (in pixels)
+					vertical_center         :   1,			// Vertically center background
+					horizontal_center       :   1,			// Horizontally center background
+					fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+					fit_portrait         	:   0,			// Portrait images will not exceed browser height
+					fit_landscape			:   1,			// Landscape images will not exceed browser width
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					thumb_links				:	0,			// Individual thumb links for each slide
+					thumbnail_navigation    :   0,			// Thumbnail navigation
+					slides 					:  	[			// Slideshow Images
+														
+														{image : 'images/homepage_1.jpg'},
+														{image : 'images/homepage_2.jpg'},
+														{image: 'images/homepage_3.jpg'},
+														{image: 'images/homepage_4.jpg'},
+														{image: 'images/homepage_5.jpg'}
+												],
+												
+					// Theme Options			   
+					progress_bar			:	0,			// Timer for each slide							
+					mouse_scrub				:	0
+					
+				});
+		    });
+		    
+		</script>
+		
+	</head>
+
+<body>
+
+<div class="container-fluid">
+	<div id="floatbar">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<div class="col-sm-4">
+					<div class="elbody">
+						<p>
+						<a href='about.html'>about</a><br>
+						<a href='menu2014.pdf'>menu</a><br>
+						<a href='events.html'>events</a><br>
+					</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="elbody">
+						<p>
+						<a href='catering.html'>catering</a><br>
+						<a href='history.html'>history</a><br>
+						<a href='community.html'>community</a><br>
+					</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4">
+				<div class="elsmaller"><p>
+					hours:<br>
+					monday - thursday<br>
+					8:30-4:30<br>
+					friday<br>
+					8:30-4:00<br>
+					<br>
+					located in the basement<br>
+					of founders (<a href='https://goo.gl/maps/puQI1'>map</a>)</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4">
+				<div id="eltitle">el table</div>
+				<div id="elsubtitle">sustainable<br>cooperative</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id='copyright'>Copyright 2014 El Table. Designed by Lily Xie</div>
+
+</body>
+</html>

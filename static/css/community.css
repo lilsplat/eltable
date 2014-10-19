@@ -1,0 +1,122 @@
+.videos{
+	text-align: center;
+}
+
+#mainbody{
+	padding-top:90px;
+	padding-left:40px;
+}
+
+.bodyheader{
+	font-family:'Lobster';
+	font-size:45px;
+	line-height:90%;
+	padding-top:10px;
+	color:black;
+	text-align:center;
+	padding-bottom:10px;
+}
+
+.blurb{
+	font-family:'Signika',sans-serif;
+	font-size:18px;
+	text-align:left;
+	padding-top:30px;
+}
+
+p{
+	font-family:'Signika',sans-serif;
+	font-size:17px;
+	text-align:left;
+}
+
+/*contact bar*/
+#contact{
+	float:right;
+	/*padding-top:90px;*/
+	padding-right: 0px;
+	padding-bottom: 20px
+}
+
+.contacthead{
+	float:top;
+	font-family:'Lobster';
+	font-size:38px;
+	line-height:80%;
+	color: black;
+	text-align:center;
+	padding-top:30px;
+	padding-right:50px;
+}
+
+.contacttext{
+	font-family:'Signika',sans-serif;
+	font-size:18px;
+	text-align:center;
+	padding-right:50px;
+}
+
+
+/*nav*/
+.navtext{
+	float:left;
+	font-family:'Signika', sans-serif;
+	font-size:16.5px;
+	color:#FFFFFF;
+	line-height: 120%;
+	text-align: left;
+	padding-left:25%;
+	padding-top:13px;
+}
+
+#navtitle {
+	font-family: 'Lobster'; 
+	font-size: 70px;
+	color: #FF9900;
+	line-height: 100%;
+	text-align: right;
+	padding-right: 20px;
+    white-space: nowrap;
+    padding-top: 3px;
+}
+
+#navbar{
+	background:url('http://www.eltable.org/images/nav.png') 0 0;
+	float:top;
+	width:100%;
+	height:80px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+/*copyright*/
+
+#copyright {
+	float:bottom;
+    width:100%;
+    bottom:0px;
+    text-align:center;
+    color:gray;
+    font-size:10px;
+}
+
+/*links*/
+#navbar a:link{
+	color: white !important;
+}
+
+#navbar a:hover {
+    color: white !important;
+}
+
+/*need to override bootstrap*/
+#navbar a:visited{
+	color: white;
+}
+
+#navbar a:active{
+	color: #FF9900;
+}

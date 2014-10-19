@@ -1,0 +1,165 @@
+
+/*hr{
+	height:5px;
+}
+*/
+
+.bio1 {
+	background: #F0F0F0;
+	height: 300px;
+	width:48%;
+	padding: 10px 10px 15px 15px;
+	float: left;
+}
+
+.bio2 {
+	background: #F0F0F0;
+	height: 300px;
+	width:48%;
+	padding: 10px 10px 15px 15px;
+	float: right;
+}
+
+.bio_pic{
+	/*background:#F0F0FF;*/
+	height:170px;
+	width:170px;
+	padding-left:5px;
+	padding-top:5px;
+	float:left;
+}
+
+.biorow{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:30px;
+	padding-left: 30px;
+}
+
+.bio_header{
+	font-family:'Lobster';
+	font-size:30px;
+	text-align:center;
+	line-height:65px;
+}
+
+.bio_main{
+	font-family:'Signika',sans-serif;
+	font-size:18px;
+	text-align:center;
+	/*line-height:23px;*/
+}
+
+#mainbody{
+	float:left;
+	padding-top:90px;
+	padding-left:40px;
+}
+
+.bodyheader{
+	font-family:'Lobster';
+	font-size:45px;
+	line-height:90%;
+	color:black;
+}
+
+.blurb{
+	font-family:'Signika',sans-serif;
+	font-size:18px;
+	text-align:left;
+}
+
+p{
+	font-family:'Signika',sans-serif;
+	font-size:17px;
+	text-align:left;
+}
+
+/*contact bar*/
+#contact{
+	float:right;
+	/*padding-top:90px;*/
+	padding-right: 0px;
+}
+
+.contacthead{
+	float:top;
+	font-family:'Lobster';
+	font-size:38px;
+	line-height:80%;
+	color: black;
+	text-align:center;
+	padding-top:30px;
+	padding-right:50px;
+}
+
+.contacttext{
+	font-family:'Signika',sans-serif;
+	font-size:18px;
+	text-align:center;
+	padding-right:50px;
+}
+
+
+/*nav*/
+.navtext{
+	float:left;
+	font-family:'Signika', sans-serif;
+	font-size:16.5px;
+	color:#FFFFFF;
+	line-height: 120%;
+	text-align: left;
+	padding-left:25%;
+	padding-top:13px;
+}
+
+#navtitle {
+	font-family: 'Lobster'; 
+	font-size: 70px;
+	color: #FF9900;
+	line-height: 100%;
+	text-align: right;
+	padding-right: 20px;
+    white-space: nowrap;
+    padding-top: 3px;
+}
+
+#navbar{
+	background:url('http://www.eltable.org/images/nav.png') 0 0;
+	float:top;
+	width:100%;
+	height:80px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+/*copyright*/
+
+#copyright {
+	width:100%;
+	bottom:0px;
+	text-align:center;
+	color:gray;
+	font-size:10px;
+}
+
+/*links*/
+a:link{
+	color: white !important;
+}
+
+a:hover {
+    color: white !important;
+}
+
+/*need to override bootstrap*/
+a:visited{
+	color: white;
+}
+
+a:active{
+	color: #FF9900;
+}
